@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var camp = ""
     @State private var textTitle2 = "What camp are you in?"
     @State private var alert = ""
+    @State private var 
     var body: some View {
         VStack {
             Text(textTitle)
@@ -31,6 +32,7 @@ struct ContentView: View {
             Button("Submit Name") {
                 textTitle = "Welcome, \(name)!"
                 name = ""
+                camp = ""
             }
             .font(.title2)
             .buttonStyle(.borderedProminent)
